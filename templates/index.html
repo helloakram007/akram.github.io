@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
   {% load static %}
   <!-- Favicons -->
-  <link href="media/logo.png" rel="icon">
+  <link href="static/logo.png" rel="icon">
 
   <!-- Vendor CSS Files -->
   <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -219,9 +219,9 @@ about new technologies. I like to solve real life problems and contribute toward
           {%for i in project%}
           <div class="col-md-4">
             <div class="work-box">
-              <a href="media/{{i.image}}" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="static/img/{{i.image}}" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="media/{{i.image}}" alt="" class="img-fluid">
+                  <img src="static/img/{{i.image}}" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
