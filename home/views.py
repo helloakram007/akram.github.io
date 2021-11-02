@@ -4,7 +4,7 @@ from .models import Contact,Blog,Portfolio,Files
 def home(request):
     c=Blog.objects.all()
     d=Portfolio.objects.all()
-    r=Files.objects.filter(sno=1)
+    r=Files.objects.filter(sno=2)
     cont={'blog':c,'project':d,'r':r}
     return render(request,'index.html',cont)
 def contact(request):

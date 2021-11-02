@@ -102,7 +102,7 @@
                     </div>
                     <span>Django</span> <span class="pull-right"></span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>C++</span> <span class="pull-right"></span>
                     <div class="progress">
@@ -110,7 +110,7 @@
                     </div>
                   </div>
                   {%for k in r%}
-                  <button type="button" class="btn btn-light"><a href="media/{{k.file}}">Resume</a></button>
+                  <button type="button" class="btn btn-light"><a href="static/img/{{k.file}}">Resume</a></button>
                   {%endfor%}
                 </div>
                 <div class="col-md-6">
@@ -160,7 +160,7 @@ about new technologies. I like to solve real life problems and contribute toward
               <div class="service-content">
                 <h2 class="s-title">Web Design</h2>
                 <p class="s-description text-center">
-                  /
+                  
                 </p>
               </div>
             </div>
@@ -173,7 +173,7 @@ about new technologies. I like to solve real life problems and contribute toward
               <div class="service-content">
                 <h2 class="s-title">Web Development</h2>
                 <p class="s-description text-center">
-                  /
+                  
                 </p>
               </div>
             </div>
@@ -184,7 +184,7 @@ about new technologies. I like to solve real life problems and contribute toward
                 <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
               </div>
               <div class="service-content">
-                <h2 class="s-title">M</h2>
+                <h2 class="s-title">Data Science </h2>
                 <p class="s-description text-center">
                   
                 </p>
@@ -266,7 +266,7 @@ about new technologies. I like to solve real life problems and contribute toward
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="/{{i.sno}}"><img src="media/{{i.image}}" alt="" class="img-fluid"></a>
+                <a href="/{{i.sno}}"><img src="static/img/{{i.image}}" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -276,7 +276,7 @@ about new technologies. I like to solve real life problems and contribute toward
                 </div>
                 <h3 class="card-title"><a href="/{{i.sno}}">{{i.title}}</a></h3>
                 <p class="card-description">
-                  {{i.content|safe}}
+                  {{i.content|safe|truncatechars:100}}
                 </p>
               </div>
               <div class="card-footer">
